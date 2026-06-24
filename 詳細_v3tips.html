@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コネクトガーデン広島祇園_定常バナー_1:1 - 詳細</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: ["class"],
+            theme: {
+                extend: {
+                    colors: {
+                        border: "hsl(var(--border))",
+                        primary: { DEFAULT: "hsl(var(--primary))", foreground: "hsl(var(--primary-foreground))" },
+                        card: { DEFAULT: "hsl(var(--card))", foreground: "hsl(var(--card-foreground))" },
+                    },
+                    borderRadius: { lg: "var(--radius)", md: "calc(var(--radius) - 2px)", sm: "calc(var(--radius) - 4px)" },
+                },
+            },
+        }
+    </script>
+    <style>
+        :root {
+            --background: 0 0% 100%;
+            --foreground: 222.2 84% 4.9%;
+            --card: 0 0% 100%;
+            --card-foreground: 222.2 84% 4.9%;
+            --primary: 222.2 47.4% 11.2%;
+            --primary-foreground: 210 40% 98%;
+            --border: 214.3 31.8% 91.4%;
+            --radius: 0.5rem;
+        }
+        body { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        ::-webkit-scrollbar-track { background: transparent; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased overflow-hidden">
+<div class="flex h-screen w-full">
+
+    <!-- サイドバー -->
+    <div class="w-20 h-screen bg-white border-r border-gray-200 flex flex-col flex-shrink-0 z-20">
+        <div class="h-20 flex items-center justify-center border-b border-gray-200">
+            <img src="https://deca-custom-nmcm-web.vercel.app/deca-x-logo.svg" alt="Logo" class="w-10">
+        </div>
+        <div class="flex-1 py-6 flex flex-col gap-4 items-center">
+            <a href="#" onclick="goBack(); return false;" class="w-14 h-14 rounded-lg flex items-center justify-center transition-colors text-gray-500 hover:bg-gray-50 hover:text-gray-900" title="ダッシュボード">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+            </a>
+            <a href="#" class="w-14 h-14 rounded-lg flex items-center justify-center transition-colors text-gray-500 hover:bg-gray-50 hover:text-gray-900" title="設定">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 1 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+            </a>
+        </div>
+        <div class="flex flex-col items-center border-t border-gray-200 py-4">
+            <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden border border-gray-200">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User" class="w-full h-full">
+            </div>
+        </div>
+    </div>
+
+    <!-- メインコンテンツ -->
+    <div class="flex-1 overflow-hidden relative bg-gray-50/30">
+        <div class="h-full overflow-y-auto">
+            <div class="max-w-[1280px] mx-auto p-6 pb-12 space-y-8">
+
+                <!-- ヘッダー -->
+                <div class="flex items-center justify-between h-9 mb-4">
+                    <div class="flex items-center gap-3">
+                        <button onclick="goBack()" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors hover:bg-gray-200 h-8 w-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                        </button>
+                        <h1 class="text-xl font-bold">コネクトガーデン広島祇園_定常バナー_1:1</h1>
+                        <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-indigo-600 text-white">v3_tips</div>
+                        <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-gray-900 text-white">生成完了</div>
+                    </div>
+                </div>
+
+                <!-- ① 入力情報 -->
+                <div class="rounded-xl border bg-white shadow-sm p-6 space-y-4 shadow-[0_4px_12px_rgba(0,0,0,0.02)]">
+                    <h2 class="font-bold text-lg flex items-center gap-2 border-b border-gray-100 pb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        入力情報
+                    </h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-6 bg-gray-50/50 p-6 rounded-xl border border-gray-100">
+                        <div class="col-span-2 md:col-span-4">
+                            <p class="text-[13px] text-gray-400 mb-1 font-medium">配信名</p>
+                            <p class="text-[15px] font-bold text-gray-900">コネクトガーデン広島祇園_定常バナー_1:1</p>
+                        </div>
+                        <div>
+                            <p class="text-[13px] text-gray-400 mb-1 font-medium">配信日</p>
+                            <p class="text-[15px] font-semibold text-gray-900">2026-06-23</p>
+                        </div>
+                        <div>
+                            <p class="text-[13px] text-gray-400 mb-1 font-medium">クリエイティブ形式</p>
+                            <p class="text-[15px] font-semibold text-gray-900">1:1（1080×1080）</p>
+                        </div>
+                        <div>
+                            <p class="text-[13px] text-gray-400 mb-1 font-medium">セグメント数</p>
+                            <p class="text-[15px] font-semibold text-gray-900">3</p>
+                        </div>
+                        <div>
+                            <p class="text-[13px] text-gray-400 mb-1 font-medium">配信媒体</p>
+                            <p class="text-[15px] font-semibold text-gray-900">LINE / Meta / Google P-Max / ディスプレイ</p>
+                        </div>
+                        <div class="col-span-2 md:col-span-4">
+                            <p class="text-[13px] text-gray-400 mb-1 font-medium">読み込んだLP</p>
+                            <a href="https://polestar-m.jp/1116/" target="_blank" class="text-[14px] text-blue-600 hover:underline font-medium">https://polestar-m.jp/1116/</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ② 商品の価値分解 -->
+                <div class="rounded-xl border bg-white shadow-sm shadow-[0_4px_12px_rgba(0,0,0,0.02)] p-6 space-y-6">
+                    <h2 class="font-bold text-lg flex items-center gap-2 border-b border-gray-100 pb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-green-600"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        商品の価値分解
+                    </h2>
+
+                    <!-- サービス同定 -->
+                    <div class="rounded-xl border border-green-100 bg-green-50/40 p-5">
+                        <div class="flex items-start gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-green-600/10 flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-green-700"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-[13px] font-bold text-green-800 mb-1">サービス同定：コネクトガーデン広島祇園（株式会社マリモ）</p>
+                                <p class="text-[13.5px] text-gray-700 leading-relaxed">本物件は「駅近の新築マンション」ではなく、<b>イオンモール広島祇園と"動線で一体化"した暮らしのインフラ</b>。雨に濡れず・カートのまま・車のままモールへ繋がり、教育・医療・買い物が徒歩圏で完結する124邸。生活者にとっては「家を買う」より<b>「暮らしの手間と移動をまるごと外注できる拠点を手に入れる」</b>選択。広告対象は本物件未接触の新規見込み購入者（広島市・近郊）。<span class="text-gray-400">（売主：株式会社マリモ / 販売提携：AGSワークス）</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3層価値分解 -->
+                    <div>
+                        <p class="text-sm text-gray-600 mb-3">LPと提供情報を統合し、価値提案を <b>機能・体験・情緒</b> の3層に分解します。</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200 relative overflow-hidden">
+                                <div class="absolute top-0 left-0 w-1 h-full bg-gray-400"></div>
+                                <p class="text-xs text-gray-500 font-bold mb-3">機能的価値</p>
+                                <ul class="text-[13px] text-gray-700 space-y-2.5">
+                                    <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5 flex-shrink-0">✓</span>屋根付連絡通路・直結ゲート・カート置き場でモールへ雨でも濡れない</li>
+                                    <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5 flex-shrink-0">✓</span>24時間ネットスーパーPickUpロッカー（1階入居者専用）</li>
+                                    <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5 flex-shrink-0">✓</span>全戸分124台駐車場（1,500〜9,700円/月）＋JR下祇園駅徒歩3分</li>
+                                    <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5 flex-shrink-0">✓</span>祇園小3分・AICJ中高2分・保育/幼稚園2分圏・小児科5分・歯科6分</li>
+                                    <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5 flex-shrink-0">✓</span>場所打ち杭42本N値60以上・設計基準強度36N/㎡・T-1防音サッシ</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200 relative overflow-hidden">
+                                <div class="absolute top-0 left-0 w-1 h-full bg-gray-600"></div>
+                                <p class="text-xs text-gray-500 font-bold mb-3">体験的価値</p>
+                                <ul class="text-[13px] text-gray-700 space-y-2.5">
+                                    <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5 flex-shrink-0">✓</span>「カートのまま・車のまま」モールへ繋がる動線一体化の暮らし体験</li>
+                                    <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5 flex-shrink-0">✓</span>ワークラウンジ（掘り込み床/間接照明）・コネクトラウンジ（キッチン付）での在宅ワーク・コミュニティ体験</li>
+                                    <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5 flex-shrink-0">✓</span>ZEH-M Oriented・BELS3つ星・床暖/エコジョーズで感じる光熱費優遇体験</li>
+                                    <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5 flex-shrink-0">✓</span>共創第1弾：防災倉庫・かまどベンチで隣人と繋がるコミュニティ体験</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200 relative overflow-hidden">
+                                <div class="absolute top-0 left-0 w-1 h-full bg-gray-800"></div>
+                                <p class="text-xs text-gray-500 font-bold mb-3">情緒的価値</p>
+                                <ul class="text-[13px] text-gray-700 space-y-2.5">
+                                    <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5 flex-shrink-0">✓</span>「モールが自宅の一部になった」という解放感と豊かさ</li>
+                                    <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5 flex-shrink-0">✓</span>「子育てに必要な全部が歩いて揃う」という親としての安心・納得</li>
+                                    <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5 flex-shrink-0">✓</span>「いざという時に機能する街」という防災で裏打ちされた心強さ</li>
+                                    <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5 flex-shrink-0">✓</span>設計事務所ルーツのマリモ・ナシュデザインの端正な佇まいへの誇り</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 差別化要素 -->
+                    <div>
+                        <p class="text-[13px] font-bold text-gray-700 mb-3 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-green-600"></span>サービス固有の提供要素（差別化レバー）
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                            <div class="border border-gray-200 rounded-lg p-4 bg-gray-50/40">
+                                <p class="text-[13px] font-bold text-gray-900 mb-1">屋根付連絡通路・直結ゲート</p>
+                                <p class="text-[12.5px] text-gray-600 leading-relaxed">サブエントランスから雨に濡れずモールJRエキチカ入口へ。カートのまま・車のままモール駐車場へ直結。全国でも希少な"接続"。</p>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg p-4 bg-gray-50/40">
+                                <p class="text-[13px] font-bold text-gray-900 mb-1">24時間PickUpロッカー</p>
+                                <p class="text-[12.5px] text-gray-600 leading-relaxed">1階入居者専用のイオンネットスーパー受取ロッカー。買い物に"行く"が消え、時間と移動コストが消える。</p>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg p-4 bg-gray-50/40">
+                                <p class="text-[13px] font-bold text-gray-900 mb-1">共用防災倉庫・コネクト広場</p>
+                                <p class="text-[12.5px] text-gray-600 leading-relaxed">炊き出し用具・給水タンク・救助工具・通信機器。かまどベンチ・マンホールトイレで"共創"に実体を与える。</p>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg p-4 bg-gray-50/40">
+                                <p class="text-[13px] font-bold text-gray-900 mb-1">ワークラウンジ・コネクトラウンジ</p>
+                                <p class="text-[12.5px] text-gray-600 leading-relaxed">掘り込み床/カウンター/間接照明のワークラウンジ。キッチン付コネクトラウンジで在宅ワーク・ホームパーティに対応。</p>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg p-4 bg-gray-50/40">
+                                <p class="text-[13px] font-bold text-gray-900 mb-1">全戸分駐車場（124台）</p>
+                                <p class="text-[12.5px] text-gray-600 leading-relaxed">ほぼ全戸分の駐車場確保。JR駅3分・モール直結と組み合わせ「車を続けても手放しても困らない」二刀流を実現。</p>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg p-4 bg-gray-50/40">
+                                <p class="text-[13px] font-bold text-gray-900 mb-1">ZEH-M Oriented・BELS3つ星</p>
+                                <p class="text-[12.5px] text-gray-600 leading-relaxed">一次エネ20%以上削減。フラット35S(ZEH)金利優遇。光熱費・住み心地・ローン金利すべてに効く経済価値。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7価値軸 -->
+                    <div>
+                        <p class="text-[13px] font-bold text-gray-700 mb-4 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-green-600"></span>サービス価値軸（7軸）詳細分解
+                        </p>
+                        <div class="space-y-3">
+
+                            <div class="border border-gray-200 rounded-xl overflow-hidden">
+                                <div class="flex items-center gap-3 px-5 py-3 bg-gray-50/80 border-b border-gray-100">
+                                    <span class="text-[12px] font-bold text-gray-400 w-4 flex-shrink-0">1</span>
+                                    <p class="text-[13.5px] font-bold text-gray-900">イオンモールとの"動線一体化"（距離でなく接続）</p>
+                                    <span class="ml-auto bg-gray-100 text-gray-500 text-[11px] px-2.5 py-0.5 rounded-full font-medium flex-shrink-0">機能的価値</span>
+                                </div>
+                                <div class="px-5 py-4 space-y-2.5">
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">根拠・事実</span>
+                                        <p class="text-gray-700 leading-relaxed">入口まで約90m徒歩2分。屋根付連絡通路・モール駐車場直結ゲート・カート置き場・1階PickUpロッカー（24時間ネットスーパー）・全戸玄関前宅配ボックス。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">顧客への意味</span>
+                                        <p class="text-gray-700 leading-relaxed">「近い」を超えて、<b class="text-gray-900">雨に濡れず・カートのまま・車のまま</b>モールが自宅の延長になる。買い物と受け取りの物理的手間がほぼ消える。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">反応しやすい顧客像</span>
+                                        <p class="text-gray-700 leading-relaxed">共働き・時短志向、ネットスーパー利用者、<b class="text-gray-900">車も使う郊外世帯・シニア</b>。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">訴求アングル</span>
+                                        <p class="text-gray-700 leading-relaxed">「濡れずに、カートのまま、車のまま。モールが"自宅の一部"になる暮らし。」</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-200 rounded-xl overflow-hidden">
+                                <div class="flex items-center gap-3 px-5 py-3 bg-gray-50/80 border-b border-gray-100">
+                                    <span class="text-[12px] font-bold text-gray-400 w-4 flex-shrink-0">2</span>
+                                    <p class="text-[13.5px] font-bold text-gray-900">教育×医療×買い物の"徒歩圏ワンストップ"</p>
+                                    <span class="ml-auto bg-gray-100 text-gray-500 text-[11px] px-2.5 py-0.5 rounded-full font-medium flex-shrink-0">体験価値</span>
+                                </div>
+                                <div class="px-5 py-4 space-y-2.5">
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">根拠・事実</span>
+                                        <p class="text-gray-700 leading-relaxed">祇園小3分・AICJ中高2分・保育/幼稚園2分圏・広島経済大12分。皮ふ科1分・内科2分・小児科5分・産婦人科・歯科6分が密集。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">顧客への意味</span>
+                                        <p class="text-gray-700 leading-relaxed">通学・通院・買い物の送迎・付き添いがすべて徒歩圏で完結。<b class="text-gray-900">子育ての移動負担が構造的に小さい。</b></p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">反応しやすい顧客像</span>
+                                        <p class="text-gray-700 leading-relaxed">未就学〜中高生の子を持つファミリー、<b class="text-gray-900">AICJ通学含む教育環境重視層</b>、通院の多い世帯・シニア。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">訴求アングル</span>
+                                        <p class="text-gray-700 leading-relaxed">「学校も病院も買い物も、ぜんぶ徒歩圏。子育てに必要な全部が、歩いて完結する。」</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-200 rounded-xl overflow-hidden">
+                                <div class="flex items-center gap-3 px-5 py-3 bg-gray-50/80 border-b border-gray-100">
+                                    <span class="text-[12px] font-bold text-gray-400 w-4 flex-shrink-0">3</span>
+                                    <p class="text-[13.5px] font-bold text-gray-900">共創を裏打ちする"災害時に機能する街"（レジリエンス）</p>
+                                    <span class="ml-auto bg-gray-100 text-gray-500 text-[11px] px-2.5 py-0.5 rounded-full font-medium flex-shrink-0">社会的価値</span>
+                                </div>
+                                <div class="px-5 py-4 space-y-2.5">
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">根拠・事実</span>
+                                        <p class="text-gray-700 leading-relaxed">共用防災倉庫（炊き出し/給水/救助/通信機器）・コネクト広場のかまどベンチ・マンホールトイレ。顔認証6箇所・4段階セキュリティ・24時間遠隔監視。場所打ち杭N値60以上・強度36N/㎡。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">顧客への意味</span>
+                                        <p class="text-gray-700 leading-relaxed">「地域コミュニティ醸成」という抽象的な共創に、<b class="text-gray-900">"いざという時に機能する"という実体が伴う。</b>安心が情緒でなく設備で裏打ちされる。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">反応しやすい顧客像</span>
+                                        <p class="text-gray-700 leading-relaxed">防災意識の高い<b class="text-gray-900">子育て・シニア層</b>、長く住む前提の永住層。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">訴求アングル</span>
+                                        <p class="text-gray-700 leading-relaxed">「つながる街は、いざという時に強い。防災倉庫・かまど・顔認証まで備えた共創。」</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-200 rounded-xl overflow-hidden">
+                                <div class="flex items-center gap-3 px-5 py-3 bg-gray-50/80 border-b border-gray-100">
+                                    <span class="text-[12px] font-bold text-gray-400 w-4 flex-shrink-0">4</span>
+                                    <p class="text-[13.5px] font-bold text-gray-900">車も電車も"二刀流"の利便（移動の自由）</p>
+                                    <span class="ml-auto bg-gray-100 text-gray-500 text-[11px] px-2.5 py-0.5 rounded-full font-medium flex-shrink-0">機能的価値</span>
+                                </div>
+                                <div class="px-5 py-4 space-y-2.5">
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">根拠・事実</span>
+                                        <p class="text-gray-700 leading-relaxed">駐車場124台（ほぼ全戸分）1,500〜9,700円/月・バイク8台・駐輪187台。JR下祇園駅徒歩3分・中祇園バス停5分（紙屋町方面最多便）。モール駐車場直結ゲート。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">顧客への意味</span>
+                                        <p class="text-gray-700 leading-relaxed">「車を手放す」も「車も使う」も<b class="text-gray-900">両取り</b>。郊外検討者の"車どうする"不安を解消し、通勤は電車・週末は車という現実的な暮らしが成立。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">反応しやすい顧客像</span>
+                                        <p class="text-gray-700 leading-relaxed">車利用前提の郊外ファミリー、<b class="text-gray-900">50代以上の買い替え夫婦</b>（車を続けたい/将来やめたい両方）。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">訴求アングル</span>
+                                        <p class="text-gray-700 leading-relaxed">「駅3分も、全戸分の駐車場も。車も電車も、あきらめない郊外の利便。」</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-200 rounded-xl overflow-hidden">
+                                <div class="flex items-center gap-3 px-5 py-3 bg-gray-50/80 border-b border-gray-100">
+                                    <span class="text-[12px] font-bold text-gray-400 w-4 flex-shrink-0">5</span>
+                                    <p class="text-[13.5px] font-bold text-gray-900">在宅ワーク・コミュニティを支える共用ハード＋家計にやさしいZEH</p>
+                                    <span class="ml-auto bg-gray-100 text-gray-500 text-[11px] px-2.5 py-0.5 rounded-full font-medium flex-shrink-0">経済的価値</span>
+                                </div>
+                                <div class="px-5 py-4 space-y-2.5">
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">根拠・事実</span>
+                                        <p class="text-gray-700 leading-relaxed">ワークラウンジ（掘り込み床/カウンター・間接照明）・コネクトラウンジ（キッチン付・ホームパーティ可）。ZEH-M Oriented・一次エネ20%削減・BELS3つ星・フラット35S(ZEH)金利優遇。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">顧客への意味</span>
+                                        <p class="text-gray-700 leading-relaxed">家でも働ける場と人と集える場が住戸の外にある。ZEHで<b class="text-gray-900">光熱費・住み心地・住宅ローン金利</b>のメリット。可処分時間とお金が残る。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">反応しやすい顧客像</span>
+                                        <p class="text-gray-700 leading-relaxed">在宅勤務の<b class="text-gray-900">DINKSカップル・共働き世帯</b>、ランニングコスト重視層。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">訴求アングル</span>
+                                        <p class="text-gray-700 leading-relaxed">「家で働き、時間もお金も残る。ワークラウンジ＋ZEH-Mの新しい家計。」</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-200 rounded-xl overflow-hidden">
+                                <div class="flex items-center gap-3 px-5 py-3 bg-gray-50/80 border-b border-gray-100">
+                                    <span class="text-[12px] font-bold text-gray-400 w-4 flex-shrink-0">6</span>
+                                    <p class="text-[13.5px] font-bold text-gray-900">つくり手の作家性と上質な共用部</p>
+                                    <span class="ml-auto bg-gray-100 text-gray-500 text-[11px] px-2.5 py-0.5 rounded-full font-medium flex-shrink-0">情緒的価値</span>
+                                </div>
+                                <div class="px-5 py-4 space-y-2.5">
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">根拠・事実</span>
+                                        <p class="text-gray-700 leading-relaxed">設計：ナシュデザイン 藤高周平。垂直マリオンのFACADE・突出した庇のホテルライク車寄せ・鏡面天井と縦格子のエントランスホール・窓外の緑と石製ベンチ。RC15階・全124邸。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">顧客への意味</span>
+                                        <p class="text-gray-700 leading-relaxed">毎日帰る場所の<b class="text-gray-900">格・佇まいへの満足</b>。設計者の思想と作り込みが、価格の納得感とブランド信頼につながる。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">反応しやすい顧客像</span>
+                                        <p class="text-gray-700 leading-relaxed"><b class="text-gray-900">失敗したくない初購入層</b>、住み替えで質を上げたい層、ブランド・意匠重視層。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">訴求アングル</span>
+                                        <p class="text-gray-700 leading-relaxed">「"Beautiful Basic"を、作家の設計で。垂直マリオンとホテルライクな帰り道。」</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-200 rounded-xl overflow-hidden">
+                                <div class="flex items-center gap-3 px-5 py-3 bg-gray-50/80 border-b border-gray-100">
+                                    <span class="text-[12px] font-bold text-gray-400 w-4 flex-shrink-0">7</span>
+                                    <p class="text-[13.5px] font-bold text-gray-900">高い構造品質と安心のセキュリティ</p>
+                                    <span class="ml-auto bg-gray-100 text-gray-500 text-[11px] px-2.5 py-0.5 rounded-full font-medium flex-shrink-0">信頼価値</span>
+                                </div>
+                                <div class="px-5 py-4 space-y-2.5">
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">根拠・事実</span>
+                                        <p class="text-gray-700 leading-relaxed">場所打ち杭42本N値60以上・設計基準強度最大36N/㎡・溶接閉鎖型帯筋・対震枠玄関・中空/二重床・T-1防音サッシ。顔認証6箇所・クラビスF22（約5.5兆通り）・24時間遠隔監視。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">顧客への意味</span>
+                                        <p class="text-gray-700 leading-relaxed"><b class="text-gray-900">数値で語れる頑丈さ・静かさ・防犯</b>。長く安心して住める根拠。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">反応しやすい顧客像</span>
+                                        <p class="text-gray-700 leading-relaxed">永住前提の全層、特に<b class="text-gray-900">子育て・シニア・初購入の不安層</b>。</p>
+                                    </div>
+                                    <div class="flex items-start gap-4 text-[12.5px]">
+                                        <span class="font-semibold text-gray-400 w-[170px] flex-shrink-0 pt-px">訴求アングル</span>
+                                        <p class="text-gray-700 leading-relaxed">「杭はN値60の支持層へ。顔認証で手ぶら帰宅。数値で語れる安心。」</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 市場・競合文脈 -->
+                    <div class="rounded-xl border border-gray-100 bg-gray-50/50 p-5">
+                        <p class="text-[13px] font-bold text-gray-700 mb-2 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-gray-500"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                            市場・競合文脈
+                        </p>
+                        <p class="text-[13px] text-gray-600 leading-relaxed">広島中心部の新築価格上昇で「郊外×駅近×生活利便」需要が高い。本物件は近隣商業地域の駅近・モール直結というプレミアム立地で、3LDK70㎡が5,210〜5,400万円。中心部比では割安感、郊外戸建比ではプレミアム。「利便と共創にお金を払う」価値観の層が中核。競合（プレディア祇園・ヴェルディ祇園等）は「駅近」「新築」「ZEH」を訴求するが、<b>イオンモールとの"動線一体化（屋根付通路/直結ゲート/24hロッカー）"と"共創第1弾＝防災で裏打ちされた街づくり"は本物件"だけ"の固有価値</b>。汎用価値は必ずこの2点と束ねる。</p>
+                    </div>
+
+                    <!-- ターゲット仮説 -->
+                    <div class="bg-white border border-gray-100 rounded-xl p-4">
+                        <p class="text-[13px] font-bold text-gray-700 mb-2">ターゲット仮説（3セグメント）</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-white border border-gray-300 text-gray-700 text-xs px-3 py-1 rounded-full font-medium">① 幼児・就学児ファミリー（教育×医療×買いもの）</span>
+                            <span class="bg-white border border-gray-300 text-gray-700 text-xs px-3 py-1 rounded-full font-medium">② 20-30代DINKS/在宅ワーク夫婦（動線×ZEH×ワークラウンジ）</span>
+                            <span class="bg-white border border-gray-300 text-gray-700 text-xs px-3 py-1 rounded-full font-medium">③ 50代以上買い替え夫婦（二刀流移動×防災安心）</span>
+                        </div>
+                        <p class="text-[12px] text-gray-400 mt-2">※ 年齢・家族構成ではなく「広告接触時にどの価値軸が反応を生むか」で分類。潜在層への気づき喚起を重視。</p>
+                    </div>
+
+                    <!-- NG表現 -->
+                    <div class="rounded-xl border border-amber-200 bg-amber-50/50 p-5">
+                        <p class="text-[13px] font-bold text-amber-800 mb-2 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-amber-600"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                            NG表現・法務ガード（全クリエイティブ共通）
+                        </p>
+                        <p class="text-[12.5px] text-amber-900/80 leading-relaxed">「資産価値が<b>必ず</b>上がる」「<b>絶対</b>値下がりしない」「<b>完売</b>確実」「<b>今が買い時</b>（断定）」「最適/日本一/○○No.1」等の断定表現は使用しない。比較は「複数社から検討」「プロと一緒に確認」、価格は確定値を使用（3LDK70㎡ 5,210〜5,400万・管理費約1.4万・修繕約0.7万）。完成予想イメージ必記、徒歩分数は80m/分基準。画像内テキスト量は30%以下を目安。</p>
+                    </div>
+                </div>
+
+                <!-- ③ ペルソナ -->
+                <div class="rounded-xl border bg-white shadow-sm shadow-[0_4px_12px_rgba(0,0,0,0.02)] p-6 space-y-4">
+                    <div class="flex items-center justify-between border-b border-gray-100 pb-3 flex-wrap gap-3">
+                        <h2 class="font-bold text-lg flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/></svg>
+                            ペルソナ（インサイト構造化）
+                        </h2>
+                        <div class="inline-flex bg-gray-100 border border-gray-200 rounded-[14px] p-[3px] gap-[3px]">
+                            <button type="button" onclick="switchPersonaTab('persona-a', this)" class="persona-tab-btn bg-white shadow-sm text-gray-900 px-4 py-1.5 text-sm font-bold rounded-[12px] transition-all">① ファミリー</button>
+                            <button type="button" onclick="switchPersonaTab('persona-b', this)" class="persona-tab-btn text-gray-500 hover:bg-gray-200 px-4 py-1.5 text-sm font-bold rounded-[12px] transition-all">② DINKS</button>
+                            <button type="button" onclick="switchPersonaTab('persona-c', this)" class="persona-tab-btn text-gray-500 hover:bg-gray-200 px-4 py-1.5 text-sm font-bold rounded-[12px] transition-all">③ 買い替え</button>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600">価値軸を転用し、3つの相談動機ごとに「心理・課題・訴求」を構造化します。</p>
+
+                    <!-- ペルソナ A -->
+                    <div id="persona-a" class="persona-tab-content pt-2">
+                        <div class="border border-gray-100 rounded-xl p-6 bg-gray-50/50">
+                            <div class="flex items-center justify-between flex-wrap gap-2 mb-4">
+                                <h3 class="font-bold text-gray-800 text-base border-b-2 border-gray-400 inline-block pb-1">ペルソナ①：幼児・就学児ファミリー<span class="text-sm font-normal text-gray-500 ml-2">（30代夫婦＋未就学〜小学生）</span></h3>
+                                <span class="bg-white border border-gray-200 text-gray-600 text-[11px] px-2 py-0.5 rounded-full">主要価値軸：教育×医療×買い物ワンストップ</span>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <p class="text-xs text-gray-400 font-bold mb-2">ターゲット属性</p>
+                                    <p class="text-[14px] text-gray-900 bg-white p-3 rounded-lg border border-gray-100">30代夫婦＋未就学〜小学生の子1〜2人。共働き、習い事はスイミング、通院も多い。今は手狭な賃貸で送迎疲れを感じている。祇園小3分・AICJ2分・小児科5分・産婦人科・歯科が徒歩圏に密集する立地、モールへ雨でも濡れない動線に強く反応。</p>
+                                </div>
+                                <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200 relative overflow-hidden">
+                                    <div class="absolute top-0 left-0 w-1 h-full bg-gray-600"></div>
+                                    <p class="text-xs text-gray-600 font-bold mb-3">インサイト構造化</p>
+                                    <ul class="text-[14px] text-gray-700 space-y-4">
+                                        <li><span class="font-bold text-gray-900 bg-gray-100 px-2 py-0.5 rounded text-xs mr-2">機能的価値</span>教育（祇園小3分/AICJ2分）×医療（小児科5分/歯科6分）×モール直結が"全部徒歩圏で完結"する束。送迎・付き添いの移動コストが構造的に小さい。</li>
+                                        <li><span class="font-bold text-gray-900 bg-gray-100 px-2 py-0.5 rounded text-xs mr-2">体験的価値</span>雨でもカートのまま通れる屋根付通路。防災倉庫・顔認証で"いざという時"が裏打ちされた安心の体験。</li>
+                                        <li><span class="font-bold text-gray-900 bg-gray-100 px-2 py-0.5 rounded text-xs mr-2">情緒的価値</span>「子育てに必要な全部が歩いて揃う場所で育てられる」という親としての納得感・選択への自信。</li>
+                                    </ul>
+                                </div>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <p class="text-xs text-gray-400 font-bold mb-2">主要訴求（3点）</p>
+                                        <div class="space-y-2">
+                                            <div class="flex items-start gap-3 bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-700"><span class="font-bold text-gray-500 flex-shrink-0">1.</span>教育×医療×買い物を個別でなく"束"で提示（祇園小/AICJ/小児科/モールを一気に）</div>
+                                            <div class="flex items-start gap-3 bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-700"><span class="font-bold text-gray-500 flex-shrink-0">2.</span>雨でも濡れない動線・カートのままモールへ（子連れの具体的な楽さ）</div>
+                                            <div class="flex items-start gap-3 bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-700"><span class="font-bold text-gray-500 flex-shrink-0">3.</span>防災倉庫・顔認証で「長く安心して育てられる」根拠を提示</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-gray-400 font-bold mb-2">想定オブジェクション</p>
+                                        <div class="space-y-2">
+                                            <div class="bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-600">「価格（5,210万〜）が予算に合うか」</div>
+                                            <div class="bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-600">「3LDK70㎡で家族に十分か」</div>
+                                            <div class="bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-600">「完成2028年が入園・入学タイミングに合うか」</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ペルソナ B -->
+                    <div id="persona-b" class="persona-tab-content pt-2 hidden">
+                        <div class="border border-gray-100 rounded-xl p-6 bg-gray-50/50">
+                            <div class="flex items-center justify-between flex-wrap gap-2 mb-4">
+                                <h3 class="font-bold text-gray-800 text-base border-b-2 border-gray-500 inline-block pb-1">ペルソナ②：20-30代DINKS/在宅ワーク夫婦<span class="text-sm font-normal text-gray-500 ml-2">（共働き・賃貸更新検討中）</span></h3>
+                                <span class="bg-white border border-gray-200 text-gray-600 text-[11px] px-2 py-0.5 rounded-full">主要価値軸：動線一体化×ZEH家計×ワークラウンジ</span>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <p class="text-xs text-gray-400 font-bold mb-2">ターゲット属性</p>
+                                    <p class="text-[14px] text-gray-900 bg-white p-3 rounded-lg border border-gray-100">20代後半〜30代の共働き/在宅勤務夫婦。中心部へ電車通勤、週末は車。外食・カフェ・運動好き。賃貸更新を機に購入検討。二人とも忙しく家事・買い物の手間を減らしたい。在宅勤務の場、ランニングコスト、デザインや新しさにも納得したい。</p>
+                                </div>
+                                <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200 relative overflow-hidden">
+                                    <div class="absolute top-0 left-0 w-1 h-full bg-gray-600"></div>
+                                    <p class="text-xs text-gray-600 font-bold mb-3">インサイト構造化</p>
+                                    <ul class="text-[14px] text-gray-700 space-y-4">
+                                        <li><span class="font-bold text-gray-900 bg-gray-100 px-2 py-0.5 rounded text-xs mr-2">機能的価値</span>屋根付通路/直結ゲート/24hロッカーで買い物時間が消え、ワークラウンジで家でも働け、ZEH-Mで光熱費とローン金利が得。距離でなく"接続と時間"で語ると刺さる。</li>
+                                        <li><span class="font-bold text-gray-900 bg-gray-100 px-2 py-0.5 rounded text-xs mr-2">体験的価値</span>コネクトラウンジ（キッチン付）でホームパーティ・ワークショップが住戸の外でできる。共創第1弾の新しさで「ここで暮らしたい」情緒。</li>
+                                        <li><span class="font-bold text-gray-900 bg-gray-100 px-2 py-0.5 rounded text-xs mr-2">情緒的価値</span>「買い物に行くが消えた」「時間とお金が残る」という可処分時間の解放感。</li>
+                                    </ul>
+                                </div>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <p class="text-xs text-gray-400 font-bold mb-2">主要訴求（3点）</p>
+                                        <div class="space-y-2">
+                                            <div class="flex items-start gap-3 bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-700"><span class="font-bold text-gray-500 flex-shrink-0">1.</span>動線一体化（屋根付通路/直結ゲート/24hロッカー）で買い物の手間がゼロに</div>
+                                            <div class="flex items-start gap-3 bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-700"><span class="font-bold text-gray-500 flex-shrink-0">2.</span>ワークラウンジ＋ZEH-Mで「時間もお金も残る」家計を具体的に訴求</div>
+                                            <div class="flex items-start gap-3 bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-700"><span class="font-bold text-gray-500 flex-shrink-0">3.</span>問いかけ型（「買い物に『行く』が、なくなる。」）で潜在層を起こす</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-gray-400 font-bold mb-2">想定オブジェクション</p>
+                                        <div class="space-y-2">
+                                            <div class="bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-600">「本当に濡れず・カートのままで行けるのか」</div>
+                                            <div class="bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-600">「子ができたら手狭か（3LDK70㎡）」</div>
+                                            <div class="bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-600">「完成2028年まで待てるか・管理費の負担」</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ペルソナ C -->
+                    <div id="persona-c" class="persona-tab-content pt-2 hidden">
+                        <div class="border border-gray-100 rounded-xl p-6 bg-gray-50/50">
+                            <div class="flex items-center justify-between flex-wrap gap-2 mb-4">
+                                <h3 class="font-bold text-gray-800 text-base border-b-2 border-gray-400 inline-block pb-1">ペルソナ③：50代以上の買い替え夫婦<span class="text-sm font-normal text-gray-500 ml-2">（郊外戸建から住み替え検討）</span></h3>
+                                <span class="bg-white border border-gray-200 text-gray-600 text-[11px] px-2 py-0.5 rounded-full">主要価値軸：二刀流移動×防災安心×終の住処</span>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <p class="text-xs text-gray-400 font-bold mb-2">ターゲット属性</p>
+                                    <p class="text-[14px] text-gray-900 bg-white p-3 rounded-lg border border-gray-100">50〜60代夫婦。子は独立。郊外戸建の管理と運転に負担。駅近・買い物至近のマンションへ住み替え検討。資産を堅実に組み替えたい。戸建の管理から解放され「これからの暮らしを身軽に・安心に」したい。</p>
+                                </div>
+                                <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200 relative overflow-hidden">
+                                    <div class="absolute top-0 left-0 w-1 h-full bg-gray-600"></div>
+                                    <p class="text-xs text-gray-600 font-bold mb-3">インサイト構造化</p>
+                                    <ul class="text-[14px] text-gray-700 space-y-4">
+                                        <li><span class="font-bold text-gray-900 bg-gray-100 px-2 py-0.5 rounded text-xs mr-2">機能的価値</span>全戸分駐車場＋駅3分＋モール直結の"二刀流"で車を続けても手放しても困らない不安解消。買い物はモール徒歩2分で将来の運転不要生活にも対応。</li>
+                                        <li><span class="font-bold text-gray-900 bg-gray-100 px-2 py-0.5 rounded text-xs mr-2">体験的価値</span>防災倉庫・顔認証・24時間監視・高強度構造で"終の住処"として長く安心して暮らせる体験。管理から解放された身軽な暮らし。</li>
+                                        <li><span class="font-bold text-gray-900 bg-gray-100 px-2 py-0.5 rounded text-xs mr-2">情緒的価値</span>設計事務所ルーツのマリモ・ナシュデザインの上質な佇まいへの誇り。「資産の納得できる組み替え」という満足。</li>
+                                    </ul>
+                                </div>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <p class="text-xs text-gray-400 font-bold mb-2">主要訴求（3点）</p>
+                                        <div class="space-y-2">
+                                            <div class="flex items-start gap-3 bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-700"><span class="font-bold text-gray-500 flex-shrink-0">1.</span>全戸分駐車場×駅3分で「車を続けても手放しても困らない」二刀流を明示</div>
+                                            <div class="flex items-start gap-3 bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-700"><span class="font-bold text-gray-500 flex-shrink-0">2.</span>防災倉庫・顔認証・24h監視で"終の住処"の安心を数値/設備で裏打ち</div>
+                                            <div class="flex items-start gap-3 bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-700"><span class="font-bold text-gray-500 flex-shrink-0">3.</span>落ち着いた上質トーン。資産性は中立表現（断定なし）</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-gray-400 font-bold mb-2">想定オブジェクション</p>
+                                        <div class="space-y-2">
+                                            <div class="bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-600">「売却と購入のタイミング・資金計画」</div>
+                                            <div class="bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-600">「バリアフリー・管理費（約1.4万）の負担」</div>
+                                            <div class="bg-white border border-gray-100 rounded-lg p-3 text-[13px] text-gray-600">「高圧線下22.66㎡の具体的影響・日照」</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ④ 生成されたクリエイティブ -->
+                <div class="rounded-xl border bg-white shadow-sm shadow-[0_4px_12px_rgba(0,0,0,0.02)] p-6 space-y-4">
+                    <div class="flex items-center justify-between border-b border-gray-100 pb-3">
+                        <h2 class="font-bold text-lg flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-purple-600"><path d="M12 2v8"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m8 6 4-4 4 4"/><path d="M16 18a4 4 0 0 0-8 0"/></svg>
+                            生成されたクリエイティブ
+                        </h2>
+                        <span class="text-sm text-gray-500">3枚 ／ 1:1（1080×1080）</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-2">
+
+                        <!-- ファミリー -->
+                        <div class="flex flex-col border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+                            <div class="bg-[#f8f9fa] border-b border-gray-100 p-3 aspect-square flex items-center justify-center relative">
+                                <span class="absolute top-3 left-3 bg-gray-900 text-white text-[11px] font-bold px-2 py-1 rounded z-10 shadow-sm">① ファミリー</span>
+                                <img src="../outputs/generated/hq/v3_tips/ファミリー.png" alt="ファミリー向けバナー" class="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-300">
+                            </div>
+                            <div class="p-5 flex-1 flex flex-col">
+                                <p class="text-[12px] text-gray-400 font-bold mb-1">キーMessage</p>
+                                <p class="text-[14px] font-bold text-gray-900 mb-3">祇園小徒歩3分、小児科徒歩5分。</p>
+                                <h4 class="font-bold text-gray-900 text-[15px] mb-2 border-b border-gray-100 pb-2">クリエイティブレバー</h4>
+                                <div class="text-[13px] text-gray-700 leading-relaxed flex-1 space-y-3">
+                                    <div>
+                                        <p class="font-bold text-gray-900 mb-1 border-l-2 border-gray-400 pl-2">【 表現レイヤー 】</p>
+                                        <p>ヘッドライン「祇園小徒歩3分、小児科徒歩5分。」を大きく、数字を赤で強調。サブ「<b>親子の毎日が徒歩圏。</b>」も赤文字で締める。個別の○分ではなく<b>教育×医療×買い物の"束"</b>として3アイコン（モール2分・祇園小3分・しみずこどもクリニック5分）で下部に視覚化。CTA：赤ボタン「来場予約受付中」でギャラリー誘導。</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-gray-900 mb-1 border-l-2 border-gray-300 pl-2">【 ヒーロー構図／デザインレバー 】</p>
+                                        <ul class="list-disc list-inside space-y-1 text-[12px]">
+                                            <li>白背景（上）× 建物外観完成予想図（下中）。手前にイオンモール、奥に垂直マリオン外壁の建物と山並み</li>
+                                            <li>ヘッドラインは左揃え2行、数字だけ赤・大きく。サブコピーは黒小文字で静かに添える</li>
+                                            <li>下部に3点アイコンバー：モール2分／祇園小3分／しみずこどもクリニック5分</li>
+                                            <li>最下段：CONNECT ブランドロゴ＋物件名＋3LDK/124邸/期・赤「来場予約受付中」ボタン</li>
+                                            <li>人物なし・外観完成予想図主体。※徒歩分数注記あり</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DINKS -->
+                        <div class="flex flex-col border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+                            <div class="bg-[#f8f9fa] border-b border-gray-100 p-3 aspect-square flex items-center justify-center relative">
+                                <span class="absolute top-3 left-3 bg-gray-900 text-white text-[11px] font-bold px-2 py-1 rounded z-10 shadow-sm">② DINKS</span>
+                                <img src="../outputs/generated/hq/v3_tips/DINKS.png" alt="DINKS向けバナー" class="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-300">
+                            </div>
+                            <div class="p-5 flex-1 flex flex-col">
+                                <p class="text-[12px] text-gray-400 font-bold mb-1">キーMessage</p>
+                                <p class="text-[14px] font-bold text-gray-900 mb-3">イオンモール 徒歩2分、JR「下祇園」駅 徒歩3分。</p>
+                                <h4 class="font-bold text-gray-900 text-[15px] mb-2 border-b border-gray-100 pb-2">クリエイティブレバー</h4>
+                                <div class="text-[13px] text-gray-700 leading-relaxed flex-1 space-y-3">
+                                    <div>
+                                        <p class="font-bold text-gray-900 mb-1 border-l-2 border-gray-400 pl-2">【 表現レイヤー 】</p>
+                                        <p>上部にCONNECT × marimo × AEON MALLロゴ帯で「共創第1弾」を宣言。ヘッドライン「イオンモール徒歩2分、JR下祇園駅徒歩3分。」数字赤強調。サブ「<b>買う、受け取る、帰る。ふたりの毎日が、もっとスムーズに。</b>」でDINKSの時短ニーズに直接刺さる。アイコン2点（屋根付き連絡通路・PickUp!ロッカー）で動線一体化の"仕組み"を可視化。</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-gray-900 mb-1 border-l-2 border-gray-300 pl-2">【 ヒーロー構図／デザインレバー 】</p>
+                                        <ul class="list-disc list-inside space-y-1 text-[12px]">
+                                            <li>最上部にロゴ帯（CONNECT/marimo/AEON MALL）。「共創プロジェクト第1弾」タグ</li>
+                                            <li>ヘッドライン左揃え大文字。数字だけ赤。白背景に建物外観完成予想図が右寄りに大きく</li>
+                                            <li>屋根付き連絡通路・PickUp!ロッカーの2アイコンで"なぜ便利か"の根拠を示す</li>
+                                            <li>最下段：物件名＋3LDK/124邸/期。ダークレッドボタン「資料請求受付中」</li>
+                                            <li>人物なし・外観完成予想図主体。共創ロゴで新しさと信頼感を演出</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 買い物（50代買い替え） -->
+                        <div class="flex flex-col border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+                            <div class="bg-[#f8f9fa] border-b border-gray-100 p-3 aspect-square flex items-center justify-center relative">
+                                <span class="absolute top-3 left-3 bg-gray-900 text-white text-[11px] font-bold px-2 py-1 rounded z-10 shadow-sm">③ 買い替え</span>
+                                <img src="../outputs/generated/hq/v3_tips/買い物.png" alt="買い替え層向けバナー" class="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-300">
+                            </div>
+                            <div class="p-5 flex-1 flex flex-col">
+                                <p class="text-[12px] text-gray-400 font-bold mb-1">キーMessage</p>
+                                <p class="text-[14px] font-bold text-gray-900 mb-3">イオンモール 徒歩2分、駅 徒歩3分。</p>
+                                <h4 class="font-bold text-gray-900 text-[15px] mb-2 border-b border-gray-100 pb-2">クリエイティブレバー</h4>
+                                <div class="text-[13px] text-gray-700 leading-relaxed flex-1 space-y-3">
+                                    <div>
+                                        <p class="font-bold text-gray-900 mb-1 border-l-2 border-gray-400 pl-2">【 表現レイヤー 】</p>
+                                        <p>「共創プロジェクト第1弾」タグ。ヘッドライン「イオンモール徒歩2分、駅徒歩3分。」はDINKS版より文字を大きく・余白を広く取り落ち着いたトーン。サブ「<b>買い物も移動も、すぐそばに。これからを、ゆとりある近さで。</b>」で住み替え・シニア層の"身軽さ"ニーズに寄せる。アイコン1点（顔認証システム）でセキュリティ安心を示す。下部スペック行でモール2分・駅3分・3LDK・124邸を横並び。</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-gray-900 mb-1 border-l-2 border-gray-300 pl-2">【 ヒーロー構図／デザインレバー 】</p>
+                                        <ul class="list-disc list-inside space-y-1 text-[12px]">
+                                            <li>建物外観完成予想図が画面全幅に広がる堂々とした構図。ヘッドラインは建物左に大文字で重ねる</li>
+                                            <li>白背景なし・外観完成予想図主役。イオンモールと建物が同一フレームに収まる立地感</li>
+                                            <li>顔認証システムアイコン1点のみ。スペック情報を下部4アイコンで横並びに整理</li>
+                                            <li>最下段：「第3期1次 先着順申込受付中」帯＋ネイビーボタン「資料請求受付中」</li>
+                                            <li>人物なし。落ち着いた配色（白・ネイビー）で上質感を演出</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 共通設計メモ -->
+                    <div class="rounded-xl border border-gray-100 bg-gray-50/50 p-4 mt-2">
+                        <p class="text-[13px] font-bold text-gray-700 mb-2">1:1広告 共通設計</p>
+                        <div class="flex flex-wrap gap-2 text-[12px]">
+                            <span class="bg-white border border-gray-200 text-gray-600 px-2.5 py-1 rounded-full">サイズ：1080×1080</span>
+                            <span class="bg-white border border-gray-200 text-gray-600 px-2.5 py-1 rounded-full">目的：来場予約 / 資料請求 / 問い合わせ</span>
+                            <span class="bg-white border border-gray-200 text-gray-600 px-2.5 py-1 rounded-full">価格表示：3LDK 5,210万〜（確定値）</span>
+                            <span class="bg-white border border-gray-200 text-gray-600 px-2.5 py-1 rounded-full">CTA：来場予約・資料請求</span>
+                            <span class="bg-white border border-gray-200 text-gray-600 px-2.5 py-1 rounded-full">完成予想イメージ必記</span>
+                            <span class="bg-white border border-gray-200 text-gray-600 px-2.5 py-1 rounded-full">徒歩分数：80m/分基準</span>
+                            <span class="bg-white border border-gray-200 text-gray-600 px-2.5 py-1 rounded-full">画像内テキスト量：30%以下</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function goBack() {
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({ type: 'hoholine:navigate', page: 'admin' }, '*');
+            return;
+        }
+        window.location.href = './管理画面.html';
+    }
+
+    function switchPersonaTab(target, btn) {
+        document.querySelectorAll('.persona-tab-content').forEach(el => el.classList.add('hidden'));
+        document.getElementById(target).classList.remove('hidden');
+        document.querySelectorAll('.persona-tab-btn').forEach(b => {
+            b.className = 'persona-tab-btn text-gray-500 hover:bg-gray-200 px-4 py-1.5 text-sm font-bold rounded-[12px] transition-all';
+        });
+        btn.className = 'persona-tab-btn bg-white shadow-sm text-gray-900 px-4 py-1.5 text-sm font-bold rounded-[12px] transition-all';
+    }
+</script>
+</body>
+</html>
